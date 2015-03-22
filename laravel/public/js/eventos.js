@@ -90,12 +90,12 @@ $(document).ready(function(){
 // prueba elementos emergentes
 function muestraMenu(objeto){
   if ($('.btn').hasClass("mostrar")){
-    $('.menuMovil_image').attr("src","{{ asset('/images/menu.png') }}")
+    $('.menuMovil_image').attr("src","http://insous.com/laravel/public/images/menu.png")
     $('.btn').removeClass('mostrar');
     $('.btn_desc').removeClass('mostrar');
   }
   else{
-    $('.menuMovil_image').attr("src","{{ asset('/images/x.png') }}")
+    $('.menuMovil_image').attr("src","http://insous.com/laravel/public/images/x.png")
     $('.btn').addClass('mostrar');
     $('.btn_desc').addClass('mostrar');
   }
