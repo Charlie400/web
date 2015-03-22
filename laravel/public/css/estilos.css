@@ -203,7 +203,7 @@ body, html{
 	padding: 0 1em;
 	text-align: center;
 	display: inline-block;
-	line-height: 8.2vh;
+	line-height: 7.8vh;
 }
 
 .mainMenu_link{
@@ -215,7 +215,7 @@ body, html{
 }
 
 .mainMenu_link.current{
-	color:#FF5621;
+	color: red;
 }
 
 .mainMenu_imageContainer{
@@ -421,6 +421,100 @@ body, html{
 	padding-top: 9vh;
 }
 
+
+
+/*#nosotros{
+	background-color: #536D79;
+	text-align: center;
+}
+
+.nosotros_title{
+	margin: 0;
+	padding: 0;
+	text-align: center;
+	color: white;
+	font-family: "Open Sans";
+	font-size: 8vh;
+	font-weight: lighter;
+	padding-top: 9vh;
+}
+
+.profile{
+	height: 60vh;
+	width: 20%;
+	display: inline-block;
+	background-color: grey;
+	margin: 3% 0 0 2%;
+	border-radius: 0.7em;
+	background: rgba(0, 0, 0, 0.2);
+	text-align: center;
+	overflow: hidden;
+}
+
+.profile_imageContainer{
+	margin: 7% 0 0 0;
+	padding: 0;
+}
+
+.profile_image{
+	width: 15%;
+	width: 30vh;
+}
+
+.profile_job{
+	color: white;
+	font-weight: lighter;
+	font-size: 23px;
+	font-family: 'Roboto Condensed', sans-serif;
+	margin: 0.8em 0 0 0;
+}
+
+.profile_name{
+	color: white;
+	font-weight: lighter;
+	font-size: 18px;
+	font-family: 'Roboto Condensed', sans-serif;
+	margin: 0.8em 0 0 0;
+	opacity: 0.8;
+}
+
+.MenuSocial-item{
+	display: inline-block;
+	margin: 0 0.4em;
+}
+
+.MenuSocial-lista{
+	margin: 1.5em;
+	padding: 0;
+}
+
+.MenuSocial-item a{
+	color: white;
+	text-decoration: none;
+	font-size: 30px;
+}
+
+a[href="twitter"]:before {
+    content: '\ea91';
+    font-family: 'icomoon';
+}
+
+a[href="plus"]:before {
+    content: '\ea88';
+    font-family: 'icomoon';
+}
+
+a[href="linkedin"]:before {
+    content: '\eac9';
+    font-family: 'icomoon';
+}
+
+a[href="github"]:before {
+    content: '\eab1';
+    font-family: 'icomoon';
+}
+*/
+
 /* Productos */
 
 #productos{
@@ -548,6 +642,162 @@ body, html{
 	transition: all 0.8s ease-out;
 }
 
+
+/*.formulario{
+	background-color: #202020;
+	height: 100vh;
+}
+
+/*.form{
+	overflow: hidden;
+}*/
+
+/*.form_title{
+	margin: 0;
+	padding: 0;
+	color: white;
+	font-family: "Open Sans";
+	font-size: 8vh;
+	font-weight: lighter;
+	text-align: center;
+	padding-top: 1em;
+}
+
+.form{
+	overflow: hidden;
+}
+
+.part1{
+	float: left;
+	position: relative;
+	width: 40%;
+	display: inline-block;
+	height: 36vh;
+	margin-left: 9em;
+}
+
+.part2{
+	position: relative;
+	width: 40%;
+	display: inline-block;
+	height: 36vh;
+}
+
+.formulario input{
+	width: 90%;
+	display: block;
+	border: 1px solid white;
+	margin-left: 1em;
+	margin-top: 1em;
+	margin-bottom: 2em;
+	height: 8vh;
+	background: rgba(0, 0, 0, 0.2);
+	color: #2f6ba8;
+}
+
+.form_motivo{
+	float: right;
+	border: 1px solid white;
+	height: 30.7vh;
+	width: 100%;
+	margin-top: 1em;
+	background: rgba(0, 0, 0, 0.2);
+	color: #2f6ba8;
+}
+
+.form_button{
+	padding: 1.5em 3em;
+	display: block;
+	margin: 0 auto;
+	background: rgba(0, 0, 0, 0.2);
+	border: 1px solid white;
+	color: white;
+}
+
+.form_button:hover{
+	border: 1px solid #2f6ba8;
+	color: #2f6ba8;
+}
+
+.contacto{
+	width: 29%;
+	float: left;
+	margin-left: 12%;
+	margin-top: 6%;
+}
+
+.tel_contacto, .correo{
+	margin: 0;
+	padding: 0;
+	color: white;
+	position: relative;
+	font-weight: bold;
+	font-size: 35px;
+	font-family: 'Roboto Condensed', sans-serif;
+}
+
+.tel_contacto:before{
+	content: '\e942';
+    font-family: 'icomoon';
+    color: white;
+}
+
+.tel_contacto{
+	margin-top: 6%;
+}
+
+.correo{
+	margin-top: 2%;
+}
+
+.correo:before{
+	content: '\ea84';
+    font-family: 'icomoon';
+    color: white;
+}
+
+.siguenos, .siguenos-item a{
+	float: right;
+	margin: 5% 0 1.5% 0;
+	padding: 0;
+	color: white;
+	font-weight: normal;
+	font-size: 35px;
+	font-family: 'Roboto Condensed', sans-serif;
+}
+
+.siguenos{
+	float: right;
+	font-size: 20px;
+	margin: 0 40% 0 20%;
+}
+
+.social{
+	width: 25%;
+	float: right;
+	margin-top: 9%;
+}
+
+.siguenos-lista{
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	margin: 10% 0 0 11%
+}
+
+.siguenos-item{
+	display: inline-block;
+	margin-right: 2%;
+}
+
+.siguenos-item a{
+	text-decoration: none;
+	color: white;
+	display: inline-block;
+}*/
+
+
+
 /* Nuevo diseño nosotros */
 
 #nosotros{
@@ -559,7 +809,11 @@ body, html{
 	font-family: "Open Sans";
 	font-size: 7vh;
 	font-weight: lighter;
+	text-shadow: 1px 1px 1px #000;
 	margin: 1em 0 0.5em 0;
+	width: 50%;
+  	left: 25%;
+  	position: relative;
 }
 
 .profile{
@@ -574,6 +828,10 @@ body, html{
 
 .profile{
 	-webkit-perspective: 1000;
+	-moz-perspective: 1000;
+	-ms-perspective: 1000;
+	-o-perspective: 1000;
+	perspective: 1000;
 }
 
 .profile_name{
@@ -599,6 +857,14 @@ body, html{
 #todo{
   width: 100%;
   height: 100%;
+  -webkit-transition: all 0.8s linear;
+  -o-transition: all 0.8s linear;
+  -moz-transition: all 0.8s linear;
+  -ms-transition: all 0.8s linear;
+  -webkit-transform-style: preserve-3d;
+  -o-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+  -ms-transform-style: preserve-3d;
   transform-style: preserve-3d;
   transition: all 0.8s linear;
   border-radius: 1em;
@@ -606,6 +872,10 @@ body, html{
 }
 
 .profile:hover #todo{
+	-webkit-transform: rotateY(180deg);
+	-o-transform: rotateY(180deg);
+	-moz-transform: rotateY(180deg);
+	-ms-transform: rotateY(180deg);
 	transform: rotateY(180deg);
   	box-shadow: 4px 13px 33px #000;
 }
@@ -614,11 +884,19 @@ body, html{
   position: absolute;
   width: 100%;
   height: 100%;
+  -webkit-backface-visibility: hidden;
+  -o-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -ms-backface-visibility: hidden;
   backface-visibility: hidden;
 }
 
 .face.back {
   display: block;
+  -webkit-transform: rotateY(180deg);
+  -o-transform: rotateY(180deg);
+  -moz-transform: rotateY(180deg);
+  -ms-transform: rotateY(180deg);
   transform: rotateY(180deg);
   box-sizing: border-box;
   padding: 10px;
@@ -709,7 +987,18 @@ a[href="github"]:before {
 	opacity: 0.9;
 }
 
-.form_motivo, .form_name, .form_email {
+.form_name, .form_lastName{
+	margin: 0 auto;
+	margin-bottom: 2em;
+	border-radius: 0.7em;
+	width: 17%;
+}
+
+.form_lastName{
+	margin-left: 0.5em;
+}
+
+.form_motivo, .form_email {
 	display: block;
 	margin: 0 auto;
 	width: 35%;
@@ -869,6 +1158,221 @@ a[href="github"]:before {
 	margin-left: -15px;
 }
 
+/* Slider de tecnologias */
+
+.slide{
+	background-image: url('../images/fondoslider.png');
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	position: relative;
+}
+
+.slide_title{
+	margin: 0;
+	padding: 0;
+	color: white;
+	font-family: "Open Sans";
+	font-size: 3vh;
+	font-weight: bold;
+	position: relative;
+	top: 5%;
+	width: 30%;
+	text-align: center;
+	left: -10%;
+	left: 15%;
+}
+
+.slide_description{
+	font-family: "Open Sans";
+	font-size: 2vh;
+	font-weight: lighter;
+	color: white;
+	width: 30%;
+	position: relative;
+	top: 5%;
+	text-align: justify;
+	left: 17%;
+}
+
+.slide_imageContainer{
+	width: 30%;
+	position: relative;
+	float: right;
+	top: -44%;
+	right: 13%;
+}
+
+.slide_image{
+	width: 100%;
+	height: 30vh;
+}
+
+.arrow_left, .arrow_right{
+	color: white;
+	font-size: 6vh;
+	position: absolute;
+	top: 55%;
+	text-decoration: none;
+}
+
+.arrow_left:hover, .arrow_right:hover{
+	text-shadow: 1px 1px 1px #000;
+}
+
+.arrow_left, .arrow_right:after{
+	content: '';
+}
+
+
+.arrow_left{
+	float: left;
+	left: 5%;
+	z-index: 3;
+}
+
+.arrow_right{
+	float: right;
+	right: 5%;
+	z-index: 3;
+}
+
+a[id="arrow_left"]:before {
+    content: '\ea44';
+    font-family: 'icomoon';
+}
+
+a[id="arrow_right"]:before {
+    content: '\ea42';
+    font-family: 'icomoon';
+}
+
+#comp1 {
+  position: relative;
+  height: 49vh;
+  z-index: 2;
+}
+
+
+#comp2 {
+  position: absolute;
+  height: 49vh;
+  z-index: 2;
+  opacity: 0;
+  top: 32.5%;
+}
+
+
+.slide_imageIphone{
+	width: 35%;
+	height: 35vh;
+}
+
+.slide_title_right{
+	margin: 0;
+	padding: 0;
+	color: white;
+	font-family: "Open Sans";
+	font-size: 3vh;
+	font-weight: bold;
+	position: relative;
+	top: 5%;
+	width: 30%;
+	text-align: center;
+	left: -10%;
+	left: 70%;
+	opacity: 0;
+}
+
+.slide_description_right{
+	font-family: "Open Sans";
+	font-size: 2vh;
+	font-weight: lighter;
+	color: white;
+	width: 30%;
+	position: relative;
+	top: 5%;
+	text-align: justify;
+	left: 70%;
+	opacity: 0;
+}
+
+.slide_imageContainer_right{
+	width: 30%;
+	position: relative;
+	float: right;
+	top: -44%;
+	right: 0%;
+	opacity: 0;
+}
+
+.slide_title_left{
+	margin: 0;
+	padding: 0;
+	color: white;
+	font-family: "Open Sans";
+	font-size: 3vh;
+	font-weight: bold;
+	position: relative;
+	top: 25%;
+	width: 30%;
+	text-align: center;
+	left: 0%;
+	/*opacity: 0;*/
+}
+
+.slide_description_left{
+	font-family: "Open Sans";
+	font-size: 2vh;
+	font-weight: lighter;
+	color: white;
+	width: 30%;
+	position: relative;
+	top: 27%;
+	text-align: justify;
+	left: 0%;
+	/*opacity: 0;*/
+}
+
+.slide_imageContainer_left{
+	width: 30%;
+	position: relative;
+	float: right;
+	top: -4%;
+	right: 80%;
+	/*opacity: 0;*/
+}
+
+.logoDW {
+  position: relative;
+  height: 12%;
+  left: 21%;
+  margin-right: 2%;
+  float: left;
+  margin-top: 1.5%;
+}
+
+.logoDWB {
+  position: relative;
+  height: 7%;
+  margin-top: 3%;
+  left: 21%;
+  margin-right: 2%;
+  float: left;
+}
+
+.slide_mainTitle{
+	color: white;
+	font-family: "Open Sans";
+	font-size: 7vh;
+	font-weight: lighter;
+	text-shadow: 1px 1px 1px #000;
+	margin: 0 0 0.5em 0;
+	text-align: center;
+	padding-top: 1.5em;
+}
+
+
 
 @media screen and (max-width:1024px){
 
@@ -947,6 +1451,16 @@ a[href="github"]:before {
   	.texto{
   		font-size: 14px;
   	}
+
+  	#todo{
+  		width: 110%;
+  	}
+
+  	.nosotros_title{
+  		width: 72%;
+  		left: 14%;
+  	}
+
 }
 
 
@@ -998,79 +1512,108 @@ a[href="github"]:before {
 		display: inline-block;
 	}
 
-	.nosotros_title{
-		font-size: 5vh;
-		padding-top: 3vh;
-		padding-bottom: 1vh;
+	.profile {
+	  width: 46%;
+	  height: 46vh;
+	  margin: 1em 0 0 0.5em;
 	}
 
-	.profile{
-		width: 49%;
-		height: 44vh;
-		margin: 0;
-		border-radius: 0;
-		position: relative;
-	}
+	.profile img{
 
-	.profile_imageContainer{
-		display: none;
-	}
-
-	.profile_job{
-		display: none;
+	  width: 100%;
+	  height: 47vh;
 	}
 
 	.profile_name{
-		width: 100%;
-		text-align: center;
-		font-size: 24px;
+		font-size: 4vh;
+	}
+
+	.profile_job{
+		font-size: 3vh;
+	}
+
+	.MenuSocial-item a {
+	  font-size: 4.5vh;
+	}
+
+	#todo {
+	  width: 100%;
+	}
+
+	.texto {
+	  font-size: 18px;
+	  width: 40%;
+	  display: inline-block;
+	  position: absolute;
+	  left: 31%;
+	  margin-top: 1.3%;
+	  color: white;
+	}
+
+	.form_name, .form_lastName, .form_email, .form_motivo{
+		width: 60%;
+	}
+
+	.form_lastName{
+		margin-left: 0;
+	}
+
+	.check{
+		left: -20%;
+	}
+
+	.arrow_right, .arrow_left{
+		display: none;
+	}
+
+	#comp1, #comp2{
+		position: relative;
 		opacity: 1;
-		position: absolute;
-		bottom: 5%;
+		height: 50vh;
+		text-align: center;
 	}
 
-	.MenuSocial-lista {
-		margin-top: 10%;
+	.slide_imageContainer, .slide_imageContainer_right{
+		display: none;
 	}
 
-	.MenuSocial-item {
-		display: block;
-		margin-left: -78%;
-		margin-bottom: 3%;
+	.slide_title, .slide_title_right{
+		width: 100%;
+		opacity: 1;
+		position: relative;
+		left: 0;
+		float: left;
+		font-size: 4vh;
 	}
 
-	#juanma{
-		background-image: url('../images/CuadradoJuanma.jpg');
-		background-repeat: no-repeat;
-		background-position: center;
-		background-size: cover;
-		/*border-top-left-radius: 0.7em;*/
+	.slide_description, .slide_description_right{
+		width: 90%;
+		opacity: 1;
+		position: relative;
+		left: 0;
+		float: left;
+		text-align: center;
+		left: 5%;
+		font-size: 3vh;
 	}
 
-	#charlie{
-		background-image: url('../images/CuadradoCharlie.jpg');
-		background-repeat: no-repeat;
-		background-position: center;
-		background-size: cover;
-		/*border-top-right-radius: 0.7em;*/
+	.logoDW {
+	  position: relative;
+	  height: 30%;
+	  margin-right: 2%;
+	  float: center;
+	  left: 0;
+	  margin-top: 4.5%;
 	}
 
-	#juan{
-		background-image: url('../images/CuadradoJuan.jpg');
-		background-repeat: no-repeat;
-		background-position: center;
-		background-size: cover;
-		/*border-bottom-left-radius: 0.7em;*/
-	}
-
-	#joseca{
-		background-image: url('../images/pikachu.jpg');
-		background-repeat: no-repeat;
-		background-position: center;
-		background-size: cover;
-		/*border-bottom-right-radius: 0.7em;*/
-	}
-
+	.logoDWB {
+	  position: relative;
+	  height: 14%;
+	  margin-top: 6%;
+	  margin-right: 2%;
+	  left: 0;
+	  float: center;
+}
 }
 
 
@@ -1104,19 +1647,51 @@ a[href="github"]:before {
 	}
 
 	.nosotros_title {
-		font-size: 4vh;
+		font-size: 7vh;
 		padding-top: 3.5vh;
 		padding-bottom: 2vh;
 	}
 
 	.profile{
-		width: 49%;
+		width: 90%;
+		height: 70vh;
 	}
 
-	.profile_name{
-		margin-top: 88.8%;
-		font-size: 22px;
+	.profile_name {
+  		margin-top: 16.8%;
+  		font-size: 6vh;
 	}
+
+	.profile_job {
+	  font-size: 4vh;
+	}
+
+	.profile img {
+	  width: 100%;
+	  height: 70vh;
+	}
+
+	#comp1, #comp2{
+		height: 45vh;
+	}
+
+	#comp2{
+		top: 5%;
+	}
+
+	.slide_title, .slide_title_right{
+		font-size: 3.5vh;
+	}
+
+	.slide_description, .slide_description_right{
+		font-size: 2.5vh;
+	}
+
+	.logoDW{
+		height: 25%;
+	}
+
+
 }
 
 @media screen and (max-width:480px){
@@ -1125,8 +1700,13 @@ a[href="github"]:before {
 		padding: 8% 8% 0 0;
 	}
 
-	#nosotros{
-		height: 116em;
+	#nosotros {
+	  /*height: 150em;*/
+	}
+
+	.nosotros_title {
+	  width: 86%;
+	  left: 7%;
 	}
 
 	.headerButton {
@@ -1164,21 +1744,17 @@ a[href="github"]:before {
 		padding: 0.3em 1em;
 	}
 
-	.nosotros_title {
-		font-size: 2.8vh;
-		padding-top: 4.5vh;
-		padding-bottom: 3vh;
-	}
 
 	.profile {
-		width: 99%;
-		height: 27em;
+  		width: 99%;
+		/*height: 32em;*/
 	}
 
 	.MenuSocial-item {
-		display: block;
-		margin-left: -82%;
-		margin-bottom: 3%;
+	  display: inline-block;
+	  margin-bottom: 3%;
+	  text-align: center;
+	  margin-right: 3%;
 	}
 
 	.MenuSocial-item a {
@@ -1188,8 +1764,50 @@ a[href="github"]:before {
 	}
 
 	.profile_name {
-		margin-top: 119.8%;
-		font-size: 17px;
+	  margin-top: 17.8%;
+	  font-size: 5vh;
+	}
+
+/*	.slide{
+		display: none;
+	}*/
+
+	.formulario input {
+	  height: 2em;
+	}
+
+	.form_name, .form_lastName, .form_email, .form_motivo {
+	  width: 85%;
+	  text-align: center;
+	}
+
+	.texto {
+	  font-size: 2.5vh;
+	  width: 60%;
+	  display: inline-block;
+	  position: absolute;
+	  left: 24%;
+	  margin-top: 3.5%;
+	  color: white;
+	}
+
+	.check {
+	  left: -33%;
+	}
+
+	.logoDW {
+	  height: 20%;
+	  margin-top: 8.5%;
+	}
+
+	.slide{
+		height: 55em;
+	}
+
+	.texto {
+	  width: 70%;
+	  left: 20%;
+	  margin-top: 2%;
 	}
 }
 
@@ -1236,26 +1854,33 @@ a[href="github"]:before {
 	.descF4{
 		top: 40%;
 	}
-	
+
+	#nosotros {
+	  /*height: 104em;*/
+	}
+
 	.profile {
-		width: 99%;
+	  width: 90%;
+	  height: 60vh;
+	  margin: 1em 0 2.5em 0.5em;
+	}
+	
+	.profile img {
+	  width: 100%;
+	  height: 60vh;
 	}
 
 	.profile_name {
-		margin-top: 120%;
-		font-size: 13px;
+	  margin-top: 15%;
+	  font-size: 5vh;
 	}
 
 }
 
-@media (min-height: :500px) and (max-height: :617px){
-	.headerButton {
-		width: 7vh;
-		height: 7vh;
-		border-radius: 100%;
+@media (max-height: :500px){
+	.profile {
+		margin: 1em 0 4em 0.5em;
 	}
 }
-
-/* Animaciones */
 
 
