@@ -54,10 +54,10 @@ return array(
 
 		'mysql' => array(
 			'driver'    => 'mysql',
-			'host'      => 'localhost',
-			'database'  => 'customlaravel',
+			'host'      => '178.62.11.72',
+			'database'  => 'insousweb',
 			'username'  => 'root',
-			'password'  => 'root',
+			'password'  => 'admin',
 			'charset'   => 'utf8',
 			'collation' => 'utf8_unicode_ci',
 			'prefix'    => '',
