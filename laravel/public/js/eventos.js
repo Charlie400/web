@@ -90,12 +90,12 @@ $(document).ready(function(){
 // prueba elementos emergentes
 function muestraMenu(objeto){
   if ($('.btn').hasClass("mostrar")){
-    $('.menuMovil_image').attr("src","../static/images/menu.png")
+    $('.menuMovil_image').attr("src","/images/menu.png")
     $('.btn').removeClass('mostrar');
     $('.btn_desc').removeClass('mostrar');
   }
   else{
-    $('.menuMovil_image').attr("src","../static/images/x.png")
+    $('.menuMovil_image').attr("src","/images/x.png")
     $('.btn').addClass('mostrar');
     $('.btn_desc').addClass('mostrar');
   }
