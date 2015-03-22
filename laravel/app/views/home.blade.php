@@ -13,7 +13,7 @@
 <body>
 	<header class="header" id="home">
 		<figure class="logoContainer">
-			<img src="{{ asset('../static/images/logo.png') }}" alt="insous" class="logo">
+			<img src="{{ asset('/images/logo.png') }}" alt="insous" class="logo">
 		</figure>
 		<p class="titulo">DUIS NON IPSUM</p>
 		<p class="subtitulo">Sed ultricies in nibh at commodo.</p>
@@ -23,7 +23,7 @@
 		<div class="menuContainer">
 			<nav class="mainMenu" id="mainMenu">
 				<figure class="mainMenu_imageContainer">
-					<img src="{{ asset('../static/images/logo.png') }}" alt="insous" class="mainMenu_image">
+					<img src="{{ asset('/images/logo.png') }}" alt="insous" class="mainMenu_image">
 				</figure>
 				<ul class="mainMenu_list">
 					<li id="linkHome" class="mainMenu_item"><a href="#home" class="mainMenu_link">Home</a></li>
@@ -38,7 +38,7 @@
 		<div class="menuMovilContainer" onBlur="ocultar();">
 			<a class="link_menu">
 			<figure class="menuMovil_imageContainer">
-				<img src="{{ asset('../static/images/menu.png') }}" alt="menu" class="menuMovil_image" onCLick="muestraMenu(this);">
+				<img src="{{ asset('/images/menu.png') }}" alt="menu" class="menuMovil_image" onCLick="muestraMenu(this);">
 			</figure>
 			</a>
 			<button class="btn botonF1"><a href="#home"></a></button>
@@ -145,18 +145,18 @@
 			<h3 class="slide_title">Diseño web</h3>
 			<p class="slide_description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus incidunt, doloremque quod voluptate ullam molestias dolorem accusantium sed hic, minima aspernatur dolore delectus! Dolorem, harum, odit. Magni, et obcaecati quia.</p>
 			<figure class="slide_imageContainer">
-				<img src="{{ asset('../static/images/macbook.png') }}" alt="Diseño Web" class="slide_image">
+				<img src="{{ asset('/images/macbook.png') }}" alt="Diseño Web" class="slide_image">
 			</figure>
-			<img src="{{ asset('../static/images/html5.png') }}" alt="Html5" class="logoDW">
-			<img src="{{ asset('../static/images/js.png') }}" alt="Javascript" class="logoDW">
-			<img src="{{ asset('../static/images/css3.png') }}" alt="css3" class="logoDW">
-			<img src="{{ asset('../static/images/balsamiq.png') }}" alt="balsamiq" class="logoDWB">
+			<img src="{{ asset('/images/html5.png') }}" alt="Html5" class="logoDW">
+			<img src="{{ asset('/images/js.png') }}" alt="Javascript" class="logoDW">
+			<img src="{{ asset('/images/css3.png') }}" alt="css3" class="logoDW">
+			<img src="{{ asset('/images/balsamiq.png') }}" alt="balsamiq" class="logoDWB">
 		</div>
 		<div id="comp2">
 			<h3 class="slide_title_right">Aplicaciones Móviles</h3>
 			<p class="slide_description_right">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus incidunt, doloremque quod voluptate ullam molestias dolorem accusantium sed hic, minima aspernatur dolore delectus! Dolorem, harum, odit. Magni, et obcaecati quia.</p>
 			<figure class="slide_imageContainer_right">
-				<img src="{{ asset('../static/images/iphone.png') }}" alt="Diseño movil" class="slide_imageIphone">
+				<img src="{{ asset('/images/iphone.png') }}" alt="Diseño movil" class="slide_imageIphone">
 			</figure>
 			<!-- <img src="../static/images/android.png" alt="Android" class="logoDW">
 			<img src="../static/images/ios-logo.png" alt="Ios" class="logoDW"> -->
@@ -175,7 +175,7 @@
 			<div id="todo" class="todo">
 				<div class="front face">
 					<figure class="profile_imageContainer">
-						<img src="{{ asset('../static/images/CuadradoJuanma.jpg') }}" alt="Juanma" class="profile_image">
+						<img src="{{ asset('/images/CuadradoJuanma.jpg') }}" alt="Juanma" class="profile_image">
 					</figure>
 				</div>
 				<div class="back face">
@@ -197,7 +197,7 @@
 			<div id="todo" class="todo">
 			<div class="front face">
 				<figure class="profile_imageContainer">
-					<img src="{{ asset('../static/images/CuadradoCharlie.jpg') }}" alt="Charlie" class="profile_image">
+					<img src="{{ asset('/images/CuadradoCharlie.jpg') }}" alt="Charlie" class="profile_image">
 				</figure>
 			</div>
 			<div class="back face">
@@ -218,7 +218,7 @@
 			<div id="todo" class="todo">
 			<div class="front face">
 				<figure class="profile_imageContainer">
-					<img src="{{ asset('../static/images/CuadradoJuan.jpg') }}" alt="Juan" class="profile_image">
+					<img src="{{ asset('/images/CuadradoJuan.jpg') }}" alt="Juan" class="profile_image">
 				</figure>
 			</div>
 			<div class="back face">
@@ -239,7 +239,7 @@
 			<div id="todo" class="todo">
 			<div class="front face">
 				<figure class="profile_imageContainer">
-					<img src="{{ asset('../static/images/pikachu.jpg') }}" alt="Juan" class="profile_image">
+					<img src="{{ asset('/images/pikachu.jpg') }}" alt="Juan" class="profile_image">
 				</figure>
 			</div>
 			<div class="back face">
