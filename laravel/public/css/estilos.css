@@ -121,7 +121,8 @@ body, html{
 	position: absolute;
 	float: center;
 	color: white;
-	font-family: 'Open Sans';
+	font-family: Consolas, monospace;
+	font-family: "Open Sans";
 }
 
 .titulo{
@@ -134,9 +135,11 @@ body, html{
 
 .subtitulo{
 	font-size: 8vh;
-	margin: 23% 12.5%;
+	margin: 23% 7.5%;
 	width: 75%;
+	width: 32ch;
 	text-align: center;
+	white-space: nowrap;
 }
 
 .logoContainer{
@@ -301,34 +304,34 @@ body, html{
 
 .botonF1{
 	top: 12%;
+	-webkit-transition: 0.3s;
+	-moz-transition: 0.3s;
+	-o-transition: 0.3s;
+	transition: 0.3s;
+}
+
+.botonF2{
+	top: 21%;
 	-webkit-transition: 0.5s;
 	-moz-transition: 0.5s;
 	-o-transition: 0.5s;
 	transition: 0.5s;
 }
 
-.botonF2{
-	top: 21%;
+.botonF3{
+	top: 30%;
 	-webkit-transition: 0.7s;
 	-moz-transition: 0.7s;
 	-o-transition: 0.7s;
 	transition: 0.7s;
 }
 
-.botonF3{
-	top: 30%;
-	-webkit-transition: 0.9s;
-	-moz-transition: 0.9s;
-	-o-transition: 0.9s;
-	transition: 0.9s;
-}
-
 .botonF4{
 	top: 39%;
-	-webkit-transition: 0.99s;
-	-moz-transition: 0.99s;
-	-o-transition: 0.99s;
-	transition: 0.99s;
+	-webkit-transition: 0.79s;
+	-moz-transition: 0.79s;
+	-o-transition: 0.79s;
+	transition: 0.79s;
 }
 
 
@@ -356,18 +359,18 @@ body, html{
 
 .descF1{
 	top: 13.5%;
-	-webkit-transition: 0.5s;
-	-moz-transition: 0.5s;
-	-o-transition: 0.5s;
-	transition: 0.5s;
+	-webkit-transition: 0.3s;
+	-moz-transition: 0.3s;
+	-o-transition: 0.3s;
+	transition: 0.3s;
 }
 
 .descF2{
 	top: 22.5%;
-	-webkit-transition: 0.7s;
-	-moz-transition: 0.7s;
-	-o-transition: 0.7s;
-	transition: 0.7s;
+	-webkit-transition: 0.5s;
+	-moz-transition: 0.5s;
+	-o-transition: 0.5s;
+	transition: 0.5s;
 }
 
 .descF3{
@@ -380,10 +383,10 @@ body, html{
 
 .descF4{
 	top: 40.5%;
-	-webkit-transition: 0.7s;
-	-moz-transition: 0.7s;
-	-o-transition: 0.7s;
-	transition: 0.7s;
+	-webkit-transition: 0.79s;
+	-moz-transition: 0.79s;
+	-o-transition: 0.79s;
+	transition: 0.79s;
 }
 
 .mostrar{
@@ -821,6 +824,7 @@ a[href="github"]:before {
   	margin: 1em 0 3em 1.5em;
   	width: 20.5%;
   	height: 39vh;
+  	max-height: 39vh;
   	z-index: 1;
   	display: inline-block;
   	border-radius: 0.8em;
@@ -1264,7 +1268,7 @@ a[id="arrow_right"]:before {
 
 
 .slide_imageIphone{
-	width: 35%;
+	width: 100%;
 	height: 35vh;
 }
 
@@ -1298,7 +1302,7 @@ a[id="arrow_right"]:before {
 }
 
 .slide_imageContainer_right{
-	width: 30%;
+	width: 11%;
 	position: relative;
 	float: right;
 	top: -44%;
@@ -1372,6 +1376,18 @@ a[id="arrow_right"]:before {
 	padding-top: 1.5em;
 }
 
+
+
+@media screen and (max-width:1100px){
+	.profile{
+		height: 34vh;
+		max-height: 34vh;
+	}
+
+	.profile img{
+		height: 34vh;
+	}
+}
 
 
 @media screen and (max-width:1024px){
@@ -1461,6 +1477,14 @@ a[id="arrow_right"]:before {
   		left: 14%;
   	}
 
+  	.slide_imageIphone{
+  		max-height: 28vh;
+  	}
+
+  	.slide_image{
+  		max-height: 26vh;
+  	}
+
 }
 
 
@@ -1515,6 +1539,7 @@ a[id="arrow_right"]:before {
 	.profile {
 	  width: 46%;
 	  height: 46vh;
+	  max-height: 46vh;
 	  margin: 1em 0 0 0.5em;
 	}
 
@@ -1654,6 +1679,7 @@ a[id="arrow_right"]:before {
 
 	.profile{
 		width: 90%;
+		max-height: 70vh;
 		height: 70vh;
 	}
 
@@ -1862,6 +1888,7 @@ a[id="arrow_right"]:before {
 	.profile {
 	  width: 90%;
 	  height: 60vh;
+	  max-height: 60vh;
 	  margin: 1em 0 2.5em 0.5em;
 	}
 	
@@ -1884,3 +1911,57 @@ a[id="arrow_right"]:before {
 }
 
 
+
+/* Barra de progreso */
+
+.barra{
+	background:#FFF;
+	position: relative;
+	background-color: #000;
+	top: 100%;
+	width: 100%;
+}
+
+.interior{
+	background-color: #FFF;
+	height: 1vh;
+	-webkit-animation: Ejemplo 9s infinite linear;/* En esta animación se especifica que el keyfremes se llama "Ejemplo" y durara 10 segundos infinitamente */
+	animation: Ejemplo 9s infinite linear;
+}
+
+@-webkit-keyframes Ejemplo{
+	0%{ width: 0% }
+	100%{ width: 100% }
+}
+
+@-webkit-keyframes typing {
+    from { width: 100; }
+    to {width: 0; }
+ }
+
+@-webkit-keyframes blink-caret {
+    50% { border-color: transparent; }
+ }
+
+.typed-cursor{
+    opacity: 1;
+    -webkit-animation: blink 0.7s infinite;
+    -moz-animation: blink 0.7s infinite;
+    animation: blink 0.7s infinite;
+}
+@keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+@-webkit-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+@-moz-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+	

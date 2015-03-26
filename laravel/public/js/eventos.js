@@ -159,11 +159,15 @@ function borrar(objeto){
 function muevelosIzq(){
   mueveComp1Izquierda();
   mueveComp2Izquierda();
+  $('.arrow_right').css({"pointer-events":"none","cursor":"default"});
+  $('.arrow_left').css({"pointer-events":"auto","cursor":"default"});
 }
 
 function muevelosDer(){
   mueveComp1Derecha();
   mueveComp2Derecha();
+  $('.arrow_left').css({"pointer-events":"none","cursor":"default"});
+  $('.arrow_right').css({"pointer-events":"auto","cursor":"default"});
 }
 
 function mueveComp1Izquierda(){
@@ -212,7 +216,7 @@ function mueveComp2Izquierda(){
       $(this).delay(600).animate({"left":"20%","opacity":"1"},1600,'easeInOutBack');
     }
     else{
-      $(this).delay(800).animate({"right":"5%","opacity":"1"},1800,'easeInOutBack');
+      $(this).delay(800).animate({"right":"25%","opacity":"1"},1800,'easeInOutBack');
     }
   });
   $('#comp2').css({"z-index":"2"});
