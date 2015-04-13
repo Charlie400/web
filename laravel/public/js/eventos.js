@@ -10,7 +10,7 @@ function alturaVentana(){
 $(window).scroll(function() {
     if ($(window).scrollTop() <= alturaVentana()){
       $("#mainMenu").css({
-        "position":"relative",
+        "position":"absolute",
         "top": "91.8vh",
       });
     }
@@ -90,12 +90,12 @@ $(document).ready(function(){
 // prueba elementos emergentes
 function muestraMenu(objeto){
   if ($('.btn').hasClass("mostrar")){
-    $('.menuMovil_image').attr("src","http://insous.com/laravel/public/images/menu.png")
+    $('.menuMovil_image').attr("src","http://insous.com/laravel/public/images/menu.png");
     $('.btn').removeClass('mostrar');
     $('.btn_desc').removeClass('mostrar');
   }
   else{
-    $('.menuMovil_image').attr("src","http://insous.com/laravel/public/images/x.png")
+    $('.menuMovil_image').attr("src","http://insous.com/laravel/public/images/x.png");
     $('.btn').addClass('mostrar');
     $('.btn_desc').addClass('mostrar');
   }
@@ -207,18 +207,10 @@ function mueveComp1Derecha(){
 }
 
 function mueveComp2Izquierda(){
-  $('#comp2').css({"opacity":"1"});
-  $('#comp2').children().each(function(){
-    if($(this).hasClass("slide_title_right")){
-      $(this).delay(400).animate({"left":"20%","opacity":"1"},1600,'easeInOutBack');
-    }
-    else if($(this).hasClass("slide_description_right")){
-      $(this).delay(600).animate({"left":"20%","opacity":"1"},1600,'easeInOutBack');
-    }
-    else{
-      $(this).delay(800).animate({"right":"25%","opacity":"1"},1800,'easeInOutBack');
-    }
-  });
+  // $('#comp2').css({"opacity":"1"});
+  $(".slide_title_right p").delay(400).animate({"left":"-50%","opacity":"1"},1600,'easeInOutBack');
+  $(".slide_description_right").delay(600).animate({"left":"-20%","opacity":"1"},1600,'easeInOutBack');
+  $(".slide_imageContainer_right").delay(800).animate({"right":"5%","opacity":"1"},1800,'easeInOutBack');
   $('#comp2').css({"z-index":"2"});
 }
 
@@ -256,4 +248,28 @@ function movimiento(){
   }
 }
 
+
+// alto nosotros
+
+function alturaProfiles(){
+  var altura = ($('.profile_image').outerHeight())+"px";
+  // $('.profile').css({'height':"'"+altura+"em'"});
+  $('.profile').css({'height':altura});
+}
+
+$(window).resize(alturaProfiles);
+
+
+// Mostrar servicios
+
+function mostrarFormulario(objeto){
+  // $(".slide_description").slideToggle();
+  // $(".logoDW").slideToggle();
+  // $(".logoDWB").slideToggle();
+  var parrafos = "." + $(objeto).attr("id") + " > p";
+  var imagenes = "." + $(objeto).attr("id") + " > img";
+
+  $(imagenes).slideToggle();
+  $(parrafos).slideToggle();
+}
 

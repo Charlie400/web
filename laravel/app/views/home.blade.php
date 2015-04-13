@@ -8,37 +8,40 @@
 	<link href='http://fonts.googleapis.com/css?family=Oswald:400,300,700' rel='stylesheet' type='text/css'>
 	<link href='http://fonts.googleapis.com/css?family=Roboto+Condensed:300italic,400,700' rel='stylesheet' type='text/css'>
 	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,700,300' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Roboto:400,700,300' rel='stylesheet' type='text/css'>
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+	<script src="{{ asset('/js/eventos.js') }}"></script>
 </head>
-<body>
+<body onload="alturaProfiles()">
 	<header class="header" id="home">
 		<figure class="logoContainer">
-			<img src="{{ asset('/images/logo.png') }}" alt="insous" class="logo">
+			<img src="{{ asset('/images/logo.png') }}" alt="insous" class="logo" height="60" width="250">
 		</figure>
 		<p class="titulo">DUIS NON IPSUM</p>
 		<p class="subtitulo">Sed ultricies in nibh at commodo.</p>
-		<button class="headerButton">
+		<!-- <button class="headerButton">
 			<a href="#slide" class="icon-chevron-down"></a>
-		</button>
-		<div class="menuContainer">
+		</button> -->
+
+		
+			<a href="#slide" class="home_link"><img src="{{ asset('/static/images/BotonHome2-2.png') }}" alt="home" width="6%" class="botonHome"></a>
+		<!-- <div class="menuContainer"> -->
 			<nav class="mainMenu" id="mainMenu">
 				<figure class="mainMenu_imageContainer">
 					<img src="{{ asset('/images/logo.png') }}" alt="insous" class="mainMenu_image">
 				</figure>
 				<ul class="mainMenu_list">
 					<li id="linkHome" class="mainMenu_item"><a href="#home" class="mainMenu_link">Home</a></li>
-					<!-- <li class="mainMenu_item"><a href="#presentaciones" class="mainMenu_link">Presentaciones</a></li> -->
 					<li id="linkSlide" class="mainMenu_item"><a href="#slide" class="mainMenu_link">Servicios</a></li>
-					<!-- <li class="mainMenu_item"><a href="#portfolios" class="mainMenu_link">Portfolios</a></li> -->
 					<li id="linkNosotros" class="mainMenu_item"><a href="#nosotros" class="mainMenu_link">Nosotros</a></li>
 					<li id="linkFormulario" class="mainMenu_item"><a href="#formularios" class="mainMenu_link">Formulario</a></li>
 				</ul>
 			</nav>
-		</div>
+		<!-- </div> -->
 		<div class="menuMovilContainer" onBlur="ocultar();">
 			<a class="link_menu">
 			<figure class="menuMovil_imageContainer">
-				<img src="{{ asset('/images/menu.png') }}" alt="menu" class="menuMovil_image" onCLick="muestraMenu(this);">
+				<img src="{{ asset('/images/menu.png') }}" alt="menu" class="menuMovil_image" width="50" onCLick="muestraMenu(this);">
 			</figure>
 			</a>
 			<button class="btn botonF1"><a href="#home"></a></button>
@@ -52,130 +55,53 @@
 		</div>
 		
 	</header>
-	<!-- <section id="presentaciones" class="moduls">
-		<p class="video_title">
-			Sed ultricies in nibh at commodo.
-		</p>
-		<video controls class="video">
-   			<source src="../static/video/video.m4v" type="video/mp4" />
-   			<source src="../static/video/video.webm" type="video/webm"/>             
-   			<p>Fallback code if video isn't supported</p>
- 		</video>
-	</section> -->
-	<!-- <section id="productos" class="moduls">
-		<section class="container">
-		  <div id="carousel">
-		  	<p class="main-title">Contrata uno de nuestros productos</p>
-		    <article id="0" class="cero product_item izquierda" onClick="rotar(this);">
-		    	<p class="product-title">Medium</p>
-		    	<p class="product-category-plata"></p>
-		    	<ul class="product-list">
-		    		<li class="product-component-mini">Menú principal</li>
-		    		<li class="product-component-mini">Posicionamiente</li>
-		    		<li class="product-component-mini">Formulario</li>
-		    		<li class="product-component-mini">Control de usuario</li>
-		    		<li class="product-component-mini">Responsive Desing</li>
-		    	</ul>
-		    </article>
-		    <article id="1" class="uno product_item derecha" onClick="rotar(this);">
-		    	<p class="product-title">Premium</p>
-		    	<p class="product-category-oro"></p>
-		    	<ul class="product-list">
-		    		<li class="product-component-mini">Menú principal</li>
-		    		<li class="product-component-mini">Posicionamiente</li>
-		    		<li class="product-component-mini">Formulario</li>
-		    		<li class="product-component-mini">Control de usuario</li>
-		    		<li class="product-component-mini">Responsive Desing</li>
-		    	</ul>
-		    </article>
-		    <article id="2" class="dos product_item centro" onClick="rotar(this);">
-		    	<p class="product-title">Basic</p>
-		    	<p class="product-category-bronce"></p>
-		    	<ul class="product-list">
-		    		<li class="product-component">Menú principal</li>
-		    		<li class="product-component">Posicionamiente</li>
-		    		<li class="product-component">Formulario</li>
-		    		<li class="product-component">Control de usuario</li>
-		    		<li class="product-component">Responsive Desing</li>
-		    	</ul>
-		    </article>
-		  </div>
-		</section>
-	</section> -->
-
-	<!-- <section id="services" class="services">
-		<h3 class="services_title">
-			Todos los servicios que ofrecemos
-		</h3>
-		<div class="services_article">
-			<div class="services_contenido_left">
-			<p class="services_webTitle">
-			Desarrollo Web
-			</p>
-			<p class="services_webDesc">
-				Diseño personalizado de web con la última tecnología:</br></br>Cliente: HTML5, CSS3, JavaScript, etc </br>Servidor: PHP, Node JS, Python, etc.
-			</p>
-			</div>
-			<figure class="services_imgContainer_left">
-				<img src="../static/images/mretina.png" alt="desarrollo web" class="services_image">
-			</figure>
-		</div>
-		
-		<div class="services_article">
-			<div class="services_contenido_right">
-			<p class="services_webTitle">
-			Desarrollo de Aplicaciones Móviles
-			</p>
-			<p class="services_webDesc">
-				Diseño personalizado de aplicaciones móviles (Android, Ios y Windows Phone).
-			</p>
-			</div>
-			<figure class="services_imgContainer_right">
-				<img src="../static/images/iphone.png" alt="desarrollo movil" class="services_image">
-			</figure>
-		</div>
-		
-	</section> -->
 
 	<section id="slide" class="slide">
 
 		<h2 class="slide_mainTitle">Todos nuestros servicios</h2>
+		<a href="#next" onClick="muevelosIzq();" class="arrow_right icon-circle-right"></a>
+		<a href="#prev" onClick="muevelosDer();" class="arrow_left icon-circle-left"></a>
 		
 		<div id="comp1">
-			<h3 class="slide_title">Diseño web</h3>
-			<p class="slide_description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus incidunt, doloremque quod voluptate ullam molestias dolorem accusantium sed hic, minima aspernatur dolore delectus! Dolorem, harum, odit. Magni, et obcaecati quia.</p>
+			<div id="information" class="information" onClick="mostrarFormulario(this);">
+				<h3 class="slide_title">
+					<img src="{{ asset('/images/mas.png') }}" width="20" height="20" alt="desplegar" class="mas">
+					<p>Diseño web</p>
+				</h3>
+				<p class="slide_description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus incidunt, doloremque quod voluptate ullam molestias dolorem accusantium sed hic, minima aspernatur dolore delectus! Dolorem, harum, odit. Magni, et obcaecati quia.</p>
+				<img src="{{ asset('/images/html5.png') }}" width="40" height="60" alt="Html5" class="logoDW">
+				<img src="{{ asset('/images/js.png') }}" width="40" height="60" alt="Javascript" class="logoDW">
+				<img src="{{ asset('/images/css3.png') }}" width="40" height="60" alt="css3" class="logoDW">
+				<img src="{{ asset('/images/balsamiq.png') }}" width="120" height="40" alt="balsamiq" class="logoDWB">
+			</div>
 			<figure class="slide_imageContainer">
-				<img src="{{ asset('/images/macbook.png') }}" alt="Diseño Web" class="slide_image">
+				<img src="{{ asset('/images/macbook.png') }}" alt="Diseño Web" width="400" class="slide_image">
 			</figure>
-			<img src="{{ asset('/images/html5.png') }}" alt="Html5" class="logoDW">
-			<img src="{{ asset('/images/js.png') }}" alt="Javascript" class="logoDW">
-			<img src="{{ asset('/images/css3.png') }}" alt="css3" class="logoDW">
-			<img src="{{ asset('/images/balsamiq.png') }}" alt="balsamiq" class="logoDWB">
 		</div>
 		<div id="comp2">
-			<h3 class="slide_title_right">Aplicaciones Móviles</h3>
-			<p class="slide_description_right">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus incidunt, doloremque quod voluptate ullam molestias dolorem accusantium sed hic, minima aspernatur dolore delectus! Dolorem, harum, odit. Magni, et obcaecati quia.</p>
+			<div id="information_right" class="information_right" onClick="mostrarFormulario(this);">
+				<h3 class="slide_title_right">
+					<img src="{{ asset('/images/mas.png') }}" width="20" height="20" alt="desplegar" class="mas">
+					<p>Aplicaciones Móviles</p>
+				</h3>
+				<p class="slide_description_right">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus incidunt, doloremque quod voluptate ullam molestias dolorem accusantium sed hic, minima aspernatur dolore delectus! Dolorem, harum, odit. Magni, et obcaecati quia.</p>
+			</div>
 			<figure class="slide_imageContainer_right">
-				<img src="{{ asset('/images/iphone.png') }}" alt="Diseño movil" class="slide_imageIphone">
+				<img src="{{ asset('/images/iphone.png') }}" alt="Diseño movil" width="150" class="slide_imageIphone">
 			</figure>
 			<!-- <img src="../static/images/android.png" alt="Android" class="logoDW">
 			<img src="../static/images/ios-logo.png" alt="Ios" class="logoDW"> -->
 		</div>
-		<a href="#next" onClick="muevelosIzq();" class="arrow_right icon-circle-right"></a>
-		<a href="#prev" onClick="muevelosDer();" class="arrow_left icon-circle-left"></a>
 		
 	</section>
 
-	<section id="nosotros">
-		<p class="nosotros_title">
-			<!-- Sed ultricies in nibh at commodo. -->
-			Conoce nuestro equipo
-		</p>
+	<section id="nosotros" onresize("alturaProfiles();")>
+		<p class="nosotros_title">Conoce nuestro equipo</p>
 		<article id="juanma" class="profile">
 			<div id="todo" class="todo">
 				<div class="front face">
 					<figure class="profile_imageContainer">
-						<img src="{{ asset('/images/CuadradoJuanma.jpg') }}" alt="Juanma" class="profile_image">
+						<img src="{{ asset('/images/CuadradoJuanma.jpg') }}" width="200" alt="Juanma" class="profile_image">
 					</figure>
 				</div>
 				<div class="back face">
@@ -197,7 +123,7 @@
 			<div id="todo" class="todo">
 			<div class="front face">
 				<figure class="profile_imageContainer">
-					<img src="{{ asset('/images/CuadradoCharlie.jpg') }}" alt="Charlie" class="profile_image">
+					<img src="{{ asset('/images/CuadradoCharlie.jpg') }}" width="200" alt="Charlie" class="profile_image">
 				</figure>
 			</div>
 			<div class="back face">
@@ -218,7 +144,7 @@
 			<div id="todo" class="todo">
 			<div class="front face">
 				<figure class="profile_imageContainer">
-					<img src="{{ asset('/images/CuadradoJuan.jpg') }}" alt="Juan" class="profile_image">
+					<img src="{{ asset('/images/CuadradoJuan.jpg') }}" width="200" alt="Juan" class="profile_image">
 				</figure>
 			</div>
 			<div class="back face">
@@ -239,7 +165,7 @@
 			<div id="todo" class="todo">
 			<div class="front face">
 				<figure class="profile_imageContainer">
-					<img src="{{ asset('/images/pikachu.jpg') }}" alt="Juan" class="profile_image">
+					<img src="{{ asset('../static/images/pikachu.jpg') }}" alt="Juan" width="200" class="profile_image">
 				</figure>
 			</div>
 			<div class="back face">
@@ -271,22 +197,8 @@
 			<div class="enviar">
 				<button class="form_button">ENVIAR MENSAJE</button>
 			</div>
-			<!-- <div class="social">
-				<p class="siguenos">Siguenos en</p>
-				<nav class="siguenos-menu">
-				<ul class="siguenos-lista">
-					<li class="siguenos-item"><a href="twitter" target="_blank"></a></li>
-					<li class="siguenos-item"><a href="plus" target="_blank"></a></li>
-					<li class="siguenos-item"><a href="linkedin" target="_blank"></a></li>
-					<li class="siguenos-item"><a href="github" target="_blank"></a></li>
-				</ul>
-			</nav>
-			</div> -->
 		</form>
 	</section>
 	<script src="{{ asset('/js/jquery-2.1.3.min.js') }}"></script>
-    <!--<script src="https://code.jquery.com/jquery-1.10.2.js"></script>-->
-	<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
-	<script src="{{ asset('/js/eventos.js') }}"></script>
 </body>
 </html>
